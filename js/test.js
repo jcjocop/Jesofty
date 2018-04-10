@@ -1,7 +1,4 @@
 /* -------------------------------------------------------------------------------------------------------------------- */
 /*  */
 /* -------------------------------------------------------------------------------------------------------------------- */
-console.log("hola que tal");
-console.log("Segunda linea");
-console.log("Ultima línea");
-console.log("bye");
+console.log("Por fin funcionó la integración de Git con VSCode ! Aleluya !!");
