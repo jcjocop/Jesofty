@@ -1,0 +1,134 @@
+<!--
+    index.html
+
+    Principal del sitio web de JeSoftY.com
+
+    Utiliza Materialize y el font Desyrel
+
+    Marzo 20, 2018
+-->
+<html lang="es">
+<head>
+
+  <title>Portaf</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Desyrel -->
+  <link rel="stylesheet" href="../fonts/Desyrelf/stylesheet.css" type="text/css" charset="utf-8" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!-- =================================================== Cuerpo principal ===================================================-->
+<body>
+
+  <!-- Columna 2: Formularios -->
+
+    <h5>Encuestas</h5>
+    <form action="#">
+      <!-- Generales -->
+      <div class="input-field">
+        <input type="text" id="nombre">
+        <label for="nombre">Nombre:</label>
+      </div>
+      <div class="input-field">
+        <input type="number" id="torre" min="1" max="8">
+        <label for="torre">Torre</label>
+      </div>
+      <div class="input-field">
+        <input type="number" id="apto" min="1" max="2">
+        <label for="apto">Apartamento</label>
+      </div>
+
+      <!-- Intervalo de edades -->
+      <div class="row">
+        <select name="edades" id="edades">
+          <option value="1">10-17</option>
+          <option value="2">18-20</option>
+          <option value="3">21-30</option>
+          <option value="4">31-40</option>
+          <option value="5">41-50</option>
+          <option value="6">51+</option>
+        </select>
+        <label>Edad</label>
+      </div>
+
+      <!-- Range field -->
+      <div class="row">
+        <div class="range-field">
+          <input type="range" min="0" max="100">
+        </div>
+        <label>Como califica nuestro servicio ?</label>
+      </div>
+
+      <!-- Datepicker -->
+      <div class="row">
+        <input type="date" class="datepicker">
+      </div>
+
+      <!-- Radios -->
+      <div class="input-field">
+        <input type="radio" name="comida" id="si" value="1">SI<br>
+        <input type="radio" name="comida" id="no" value="2">NO<br>
+        <label for="si">¿ Está de acuerdo con tener una venta de comida pre-encargada ?</label><br>
+      </div>
+      <div class="input-field">
+        <input type="radio" name="fds" id="si" value="1">SI<br>
+        <input type="radio" name="fds" id="no" value="2">NO<br>
+        <label for="si">¿ Cree que los fines de semana queda bien tener un concierto u obra de teatro ?</label><br>
+      </div>
+      <div class="input-field">
+        <input type="radio" name="vsd" id="vsd" value="1">VIERNES<br>
+        <input type="radio" name="vsd" id="vsd" value="2">SABADO<br>
+        <input type="radio" name="vsd" id="vsd" value="1">DOMINGO<br>
+        <label for="vsd">¿ Cuál día le parece mejor ?</label><br>
+      </div>
+      <div class="input-field">
+        <input type="radio" name="pagaria" id="pagaria" value="1">SI<br>
+        <input type="radio" name="pagaria" id="pagaria" value="2">NO<br>
+        <label for="pagaria">¿ Pagaría porque traer a la obra de teatro "del momento" ?</label><br>
+      </div>
+
+      <!-- checkbox -->
+      <div class="input-field">
+        <input type="checkbox" name="otrotipo" id="otrotipo" value="1">MARATHONES<br>
+        <input type="checkbox" name="otrotipo" id="otrotipo" value="2">JUEGOS INTER-TORRES<br>
+        <input type="checkbox" name="otrotipo" id="otrotipo" value="2">RALLYS<br>
+        <label for="otrotipo">¿ Cuál otro tipo de eventos le gustaría que tuvieramos ?</label><br>
+      </div>
+    </form>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+
+  <script>
+      $(document).ready(function(){
+          $('select').material_select();
+          $('.datepicker').pickadate();
+      });
+  </script>
+
+</body>
+</html>
+
+<!--
+  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <nav class="white" role="navigation">
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Enlaces</a></li>
+      </ul>
+
+            <h4 class="row center" style="font-family:desyrelregular">Sitios Web</h4>
+
+-->

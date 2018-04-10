@@ -1,0 +1,752 @@
+<!--
+    grillas.html
+
+    Llamado desde index.html (opción Sitios Web)
+
+    Ilustra el maquetado de 12 columnas y el uso de las clases:
+    * responsive-img
+    * responsive-img circle
+    * video-container y
+    * z-depth-x
+
+    Marzo 20, 2018
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>Portafolio</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Desyrel -->
+    <link rel="stylesheet" href="../fonts/Desyrelf/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+    <!-- ******************************************** Barra de navegación ****************************************************************** -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right">@TuLogoAquí</a>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="#"><i class="material-icons">camera_alt</i></a></li>
+                    <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+                    <li><a href="#"><i class="material-icons">announcement</i></a></li>
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdowna"><i class="material-icons">arrow_drop_down</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="dropdown-content" id="dropdowna">
+        <li><a href="#">Opt 1</a></li>
+        <li><a href="#">Opt 2</a></li>
+    </ul>
+    <!-- Move the sidenav outside of .navbar-fixed -->
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="#"><i class="material-icons">camera_alt</i></a></li>
+        <li><a href="#"><i class="material-icons">format_list_bulleted</i></a></li>
+        <li><a href="#"><i class="material-icons">announcement</i></a></li>
+        <li>
+            <a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">arrow_drop_down</i></a>
+        </li>
+    </ul>
+    <ul class="dropdown-content" id="dropdown1">
+        <li><a href="#">Opt 1</a></li>
+        <li><a href="#">Opt 2</a></li>
+    </ul>
+
+    <!-- ******************************************** Contenedor de lo que Materialize puede hacer  ****************************************************************** -->
+    <div class="container" >
+
+        <!-- busquedas -->
+        <div class="row">
+            <form >
+                <div class="input-field">
+                    <input id="search" type="search" placeholder="" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+
+        <ul class="collapsible">
+            <!-- Primera Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">markunread_mailbox</i>Buzones</div>
+                <div class="collapsible-body">
+                    <div class="row">
+
+                        <div class="col s1"> <p>Buzon 101</p> </div> <div class="col s1"> <p>Buzon 102</p> </div>
+                        <div class="col s1"> <p>Buzon 103</p> </div> <div class="col s1"> <p>Buzon 104</p> </div>
+                        <div class="col s1"> <p>Buzon 201</p> </div> <div class="col s1"> <p>Buzon 202</p> </div>
+                        <div class="col s1"> <p>Buzon 203</p> </div> <div class="col s1"> <p>Buzon 204</p> </div>
+                        <div class="col s1"> <p>Buzon 301</p> </div> <div class="col s1"> <p>Buzon 302</p> </div>
+                        <div class="col s1"> <p>Buzon 303</p> </div> <div class="col s1"> <p>Buzon 304</p> </div>
+
+                        <div class="col s1"> <p>Buzon 401</p> </div> <div class="col s1"> <p>Buzon 402</p> </div>
+                        <div class="col s1"> <p>Buzon 403</p> </div> <div class="col s1"> <p>Buzon 404</p> </div>
+                        <div class="col s1"> <p>Buzon 501</p> </div> <div class="col s1"> <p>Buzon 502</p> </div>
+                        <div class="col s1"> <p>Buzon 503</p> </div> <div class="col s1"> <p>Buzon 504</p> </div>
+                        <div class="col s1"> <p>Buzon 601</p> </div> <div class="col s1"> <p>Buzon 602</p> </div>
+                        <div class="col s1"> <p>Buzon 603</p> </div> <div class="col s1"> <p>Buzon 604</p> </div>
+                    </div> <!-- row -->
+                </div> <!-- collapsible-body -->
+            </li>
+
+            <!-- Segunda Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">ondemand_video</i>Imagenes y Videos</div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <!-- Uso de las clases responsive-img, responsive-img circle, video-container y z-depth-x -->
+                        <div class="col s6">
+                            <p><img src="fentrega.jpg" class="responsive-img circle z-depth-5"></p>
+                        </div>
+
+                        <div class="col s6">
+                            <div class="video-container z-depth-5">
+
+                                <p>Video</p>
+                                <iframe width="560" heigth="315" src="https://www.youtube.com/embed/PdnUZpjmxso" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div> <!-- Segunda fila -->
+                </div>
+            </li>
+
+            <!-- Tercera Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">grid_on</i>Grillas y Botones</div>
+                <div class="collapsible-body">
+                    <div class="row">
+
+                        <!-- Tablas: uso de clases:  bordered striped hoverable responsive-table -->
+                        <div class="col s6">
+
+                            <!-- Tabla -->
+                            <table class="bordered striped hoverable responsive-table" style="font-size: 12px">
+                                <!-- Encabezado -->
+                                <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Nombre completo</td>
+                                    <td>Torre</td>
+                                    <td>Apartamento</td>
+                                    <td>Estado</td>
+                                </tr>
+                                </thead>
+
+                                <!-- Encabezado -->
+                                <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Luis Pérez</td>
+                                    <td>I</td>
+                                    <td>101</td>
+                                    <td>Solvente</td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Mario López</td>
+                                    <td>I</td>
+                                    <td>102</td>
+                                    <td>Solvente</td>
+                                </tr>
+                                <tr>
+                                    <td style="color:#a21318">03</td>
+                                    <td style="color:#a21318">Jorge Romero</td>
+                                    <td style="color:#a21318">I</td>
+                                    <td style="color:#a21318">201</td>
+                                    <td style="color:#a21318">Mora <span class="badge red white-text">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>Pedro Sosa</td>
+                                    <td>I</td>
+                                    <td>202</td>
+                                    <td>Solvente</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div> <!-- Tablas -->
+
+                        <!-- Botones. Clases: btn, btn-flat, btn-large, btn-floating "color" -->
+                        <div class="col s6">
+
+                            <span style="font-family:desyrelregular; font-size:20px">Para más información haga click en cada botón</span>
+                            <a href="#" class="btn waves-effect" onclick="Materialize.toast('Muy pronto le pediremos que llene una encuesta !',3000)">Encuestas</a>
+                            <a href="#" class="btn purple lighten-1" onclick="Materialize.toast('Nuestro horario en Administración es de 9 a 17 horas',5000)">Información</a>
+                            <a href="#" class="btn btn-large btn-floating red z-depth-3" onclick="Materialize.toast('El miércoles Santo trabajamos hasta las 12pm',4000)">Aviso</a>
+                            <a href="#" class="btn waves-effect btn-large btn-floating blue z-depth-3" onclick="miAviso()">CLIMA</a>
+                            <a href="#" class="bth waves-effect tooltipped" data-tooltip="Favor comunicarse a Administración" data-position="right">Servicio Doméstico</a>
+                        </div>
+                    </div> <!-- Tercera fila-->
+                </div>
+            </li>
+
+            <!-- Cuarta Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">announcement</i>Avisos</div>
+                <div class="collapsible-body">
+                    <div class="row">
+
+                        <!-- Columna 1: Tarjetas. Clases: card card-content, card-title blue-text text-darken-2 -->
+                        <div class="col s4">
+                            <div class="card yellow blue-text text-darken-4">
+
+                                <div class="card-image">
+                                    <img src="guitarras.jpg">
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    Se invita a todos los residentes a un concierto de guitarras el día Viernes dd de este mes a las hh:mm.
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" style="color:blue">Confirmar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Columna: Tarjeta con Desplazamiento (NO FUNCIONA) -->
+                        <div class="col s4">
+                            <div class="card red white-text text-darken-4">
+
+                                <div class="card-image">
+                                    <img src="morosos.jpg">
+                                </div>
+                                <div class="card-content z-depth-3">
+                                    Con 2 meses de atraso en la cuota de mantenimiento se suspende el uso de la tarjeta electrónica, piscina y salón de eventos.
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" style="color:white">Enterado</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Columna: Tarjeta con Desplazamiento (NO FUNCIONA) -->
+                        <div class="col s4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="suspensionagua.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <h1 class="card-title activator">Ver horario de suspension</h1>
+                                    Del sabado ...
+                                </div>
+
+                                <div class="card-reveal">
+                                    <h1 class="card-title activator">Ver horario de suspension</h1>
+                                    Del sabado dd-mm-aaaa a partir de las 10pm a las 03:00am del domingo dd-mm-aaaa.
+                                </div>
+                            </div> <!-- card -->
+                        </div> <!-- 3a. Columna -->
+
+                        <!-- Primera Columna: Tarjeta con punto flotante (NO FUNCIONA) -->
+                        <div class="col s6">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="tarjetas.jpg"><br>
+                                    <span class="card-title" STYLE="color:black">Reposición de Tarjetas</span>
+                                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                </div>
+
+                                <div class="card-content">
+                                    <p>El costo por reposición de las tarjetas electrónicas es de Qcdu.cc</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Segunda Columna: Tarjeta Horizontal -->
+                        <div class="col s4">
+                            <h2 class="header"></h2>
+                            <div class="card horizontal">
+                                <div class="card-image">
+                                    <img src="paisaje2.jpg">
+                                </div>
+
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>Pronto estaremos informando acerca de una excursion al Biotopo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tercera Columna: Tarjeta con Desplazamiento (NO FUNCIONA) -->
+                        <div class="col s4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="oficina.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Areas de Estudio<i class="material-icons right">more_vert</i></span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Areas de Estudio<i class="material-icons right">close</i></span>
+                                    <p>Recuerde que puede utilizar las mesas que están ubicadas frente a la piscina.</p>
+                                </div>
+                            </div>
+                        </div> <!-- col s4 -->
+                    </div> <!-- row -->
+                </div> <!-- body -->
+            </li>
+
+            <!-- Quinta Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">add_alert</i>Otros avisos</div>
+                <div class="collapsible-body">
+                    <!-- Columna 1: Tarjeta con Tabs -->
+                    <div class="card">
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width">
+                                <li class="tab"><a href="#test4">Vacaciones</a></li>
+                                <li class="tab"><a class="active" href="#test5">Velocidad</a></li>
+                                <li class="tab"><a href="#test6">Pisicina y Gimnasio</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey lighten-4">
+                            <div id="test4">A partir del miércoles santo al medio día ya no atenderemos en Administración.</div>
+                            <div id="test5">Recuerde que la velocidad en vehículo propio o visitantes es de 20Km/H</div>
+                            <div id="test6">La piscina de 5am a 9pm y gimnasio de 6am a 10pm</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Sexta Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">format_align_center</i>Encuestas</div>
+                <div class="collapsible-body">
+                    <div class="row">
+
+                        <!-- Columna 2: Formularios -->
+                        <div class="col s12">
+
+                            <form action="#">
+                                <!-- Generales -->
+                                <div class="input-field col s12">
+                                    <input type="text" id="nombre">
+                                    <label for="nombre">Nombre:</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input type="number" id="torre" min="1" max="8">
+                                    <label for="torre">Torre</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input type="number" id="nivel" min="1" max="8">
+                                    <label for="nivel">nivel</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input type="number" id="apto" min="1" max="4">
+                                    <label for="apto">Apartamento</label>
+                                </div>
+                                <!-- Intervalo de edades -->
+                                <div class="col s6">
+                                    <label>Edad</label>
+                                    <select name="edades" id="edades">
+                                        <option value="1">10-17</option>
+                                        <option value="2">18-20</option>
+                                        <option value="3">21-30</option>
+                                        <option value="4">31-40</option>
+                                        <option value="5">41-50</option>
+                                        <option value="6">51+</option>
+                                    </select>
+                                </div>
+                                <!-- Range Fields -->
+                                <div class="col s6">
+                                    <div class="range-field">
+                                        <input type="range" min="0" max="100">
+                                    </div>
+                                    <label>Como califica nuestro servicio ?</label>
+                                </div>
+
+                                <!-- datepicker -->
+                                <div class="row col s12">
+                                    <input type="date" class="datepicker" placeholder="Click aquí para ver Calendario">
+                                </div>
+
+                                <!-- radio-->
+                                <div class="row">
+
+                                    <div class="col s6">
+                                        <input type="radio" name="comida" id="si" value="1">SI
+                                        <label for="si"></label>
+                                        <input type="radio" name="comida" id="no" value="2">NO
+                                        <label for="no"></label><br>
+                                        <label>¿ Está de acuerdo con tener una venta de comida pre-encargada ?</label><br>
+                                    </div>
+
+                                    <div class="col s6">
+                                        <input type="radio" name="fds" id="fsi" value="1">SI
+                                        <label for="fsi"></label>
+                                        <input type="radio" name="fds" id="fno" value="2">NO
+                                        <label for="fno"></label><br>
+                                        <label >¿ Cree que los fines de semana queda bien tener un concierto u obra de teatro ?</label><br>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s6">
+
+                                        <input type="radio" name="vsd" id="dv" value="1">VIERNES
+                                        <label for="dv"></label>
+                                        <input type="radio" name="vsd" id="ds" value="2">SABADO
+                                        <label for="ds"></label>
+                                        <input type="radio" name="vsd" id="dd" value="1">DOMINGO
+                                        <label for="dd"></label><br>
+                                        <label>¿ Cuál día le parece mejor ?</label><br>
+                                    </div>
+
+                                    <!-- check box-->
+                                    <div class="col s6">
+                                        <input type="checkbox" name="otrotipo" id="ot1" value="1">COACH
+                                        <label for="ot1"></label>
+                                        <input type="checkbox" name="otrotipo" id="ot2" value="2">JUEGOS
+                                        <label for="ot2"></label>
+                                        <input type="checkbox" name="otrotipo" id="ot3" value="2">RALLYS
+                                        <label for="ot3"></label><br>
+                                        <label>¿ Cuál otro tipo de eventos le gustaría que tuvieramos ?</label><br>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> <!-- Formularios -->
+                    </div> <!-- Sexta Fila -->
+                </div>
+            </li>
+
+            <!-- Septima fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">format_align_center</i>Autocomplete, chip, on/off, iconos</div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <!-- Autocomplete -->
+                        <div class="col s3">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">textsms</i>
+                                    <input type="text" id="autocomplete-input" class="autocomplete">
+                                    <label for="autocomplete-input">Autocomplete</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- chip -->
+                        <div class="col s3">
+                            <div class="chip">
+                                <img src="../imagenes/jocop.jpeg" alt="Contact Person">
+                                JuanK Jo
+                            </div>
+                            <div class="chip">
+                                Autor de este sitio web.
+                                <i class="close material-icons">close</i>
+                            </div>
+                        </div>
+
+                        <!-- Switch -->
+                        <div class="col s2">
+                            <div class="switch">
+                                <label>
+                                    No
+                                    <input type="checkbox" name="fds" value="1">
+                                    <span class="lever"></span>
+                                    Si
+                                </label><br>
+                                <label >¿ Saldrá fuera del país ?</label><br>
+                            </div>
+                        </div>
+
+                        <!-- Iconos -->
+                        <div class="col s3">
+                            <i class="material-icons">add</i>
+                            <i class="medium material-icons">add</i>
+                            <i class="large material-icons">add</i>
+                        </div>
+                    </div> <!-- Septima fila -->
+                </div>
+            </li>
+
+            <!-- Novena Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">add_a_photo</i>Galería de Imágenes</div>
+                <div class="collapsible-body">
+
+                    <div class="row">
+
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro1.jpg" class="responsive-image materialboxed" data-caption="Vista desde la torre 6">
+                    </div>
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro2.jpg" class="responsive-image materialboxed" data-caption="Área recreativa frente a la piscina">
+                    </div>
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro3.jpg" class="responsive-image materialboxed" data-caption="Piscina Climatizada">
+                    </div>
+                    </div>
+                    <div class="row">
+
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro4.jpg" class="responsive-image materialboxed" data-caption="Gimnasio">
+                    </div>
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro5.jpg" class="responsive-image materialboxed" data-caption="Vista desde Administración">
+                    </div>
+                    <div class="col s4">
+                        <img src="../imagenes/SanIsidro6.jpg" class="responsive-image materialboxed" data-caption="Vista Torres 5 y 6">
+                    </div>
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- Decima Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">slideshow</i>Desplazamiento de Imágenes (Slider)</div>
+                <div class="collapsible-body">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img href="#" src="../imagenes/slide1.jpg">
+                                <div class="caption center-align" style="color:blue">
+                                    <h3>Mapa</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <img href="#" src="../imagenes/slide2.jpg">
+                                <div class="caption center-align" style="color:blue">
+                                    <h3>Garita</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <img href="#" src="../imagenes/slide3.jpg">
+                                <div class="caption center-align" style="color:blue">
+                                    <h3>Vista</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Once Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">content_paste</i>Más información</div>
+                <div class="collapsible-body">
+
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Estado de Cuenta</a>
+
+                    <div class="modal" id="modal1">
+
+                        <div class="modal-header right">
+                            <a href="#!" class="btn waves-effect btn-small btn-floating red z-depth-3 modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+                        </div>
+                        <div class="modal-header right">
+                            <a href="#!" class="btn waves-effect btn-small btn-floating green z-depth-3 modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">check</i></a>
+                        </div>
+                        <div class="modal-content">
+                            <h4>Estado de cuenta</h4>
+                            <p>Su estado de cuenta es el siguiente\n Saldo Mes Anterior: Q,QQQ.QQ\n Saldo dos meses atras: Q,QQQ.QQ</p>
+                        </div>
+                        <div class="modal-fotter center">
+                            <span>Gracias</span>
+                        </div>
+                    </div> <!-- modal-content -->
+                </div> <!-- modal -->
+            </li>
+
+            <!-- Once Fila -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">tab</i>Pestañas o Tabs</div>
+                <div class="collapsible-body">
+                    <div class="row">
+                        <ul class="tabs">
+                            <li class="tab col s3"><a href="#tab1" class="active">Tab 1</a></li>
+                            <li class="tab col s3"><a href="#tab2">Tab 2</a></li>
+                            <li class="tab col s3"><a href="#tab3">Tab 3</a></li>
+                            <li class="tab col s3"><a href="#tab4">Tab 4</a></li>
+                        </ul>
+                        <div class="col s12" id="tab1">Esta en el primer apartado</div>
+                        <div class="col s12" id="tab2">Esta en el SEGUNDO apartado</div>
+                        <div class="col s12" id="tab3">Esta en el tercer apartado</div>
+                        <div class="col s12" id="tab4">Esta en el CUARTO apartado</div>
+
+                    </div>
+                </div>
+            </li>
+
+            <!-- Filas Doce y trece -->
+            <li>
+                <div class="collapsible-header"><i class="material-icons">show_chart</i>VUE</div>
+                <div class="collapsible-body">
+
+                    <!-- identificador válido para Vue -->
+                    <main>
+
+                        <!-- Fila 12 -->
+                        <div class="row">
+
+                            <!-- Columna para ingresar el nombre -->
+                            <div class="col s2">
+                                <div class="input-field">
+
+                                    <input type="text" id="nombre" v-model="mensaje">
+                                    <label for="nombre">Nombre:</label>
+                                </div>
+                            </div>
+                            <!-- Columna para ingresar la Edad -->
+                            <div class="col s2">
+                                <div class="input-field">
+
+                                    <input type="number" v-model="edad" id="edad" min="12" max="90">
+                                    <label for="edad">Edad:</label>
+                                </div>
+                            </div>
+
+                            <!-- Columna para el botón AGREGAR -->
+                           <div class="col s2">
+                                <a href="#" class="btn btn-verysmall waves-effect" v-on:click="f_agregar"><i class="material-icons">send</i></a>
+                            </div>
+                            <!-- Columna para el chip de la persona y mensaje de bienvenida -->
+                            <div class="col s6" v-show="agregado">
+                                <template>
+                                    <div class="col s6">
+                                        <div class="chip">
+
+                                            <img src="../imagenes/jocop.jpeg" alt="Contact Person">
+                                            Bienvenido {{ mensaje }}
+                                        </div>
+                                    </div>
+                                    <div class="col s6">
+                                        <span v-if="edad < 18">No puedes ver el estado de cuenta. Eres menor de edad.</span>
+                                        <span v-else-if="edad > 85">Ya eres muy adulto, debes tener entre 18 y 85 años</span>
+                                        <span v-else>Puedes ver el estado de cuenta</span>
+                                    </div>
+                                </template>
+                            </div>
+                        </div> <!-- Fila 12 -->
+
+                        <!-- Fila 13 -->
+                        <div class="row">
+                            <!-- Columna para los días laborales -->
+                            <div class="col s6" v-show="agregado">
+                                <ul>
+                                    <span style="font-weight: bold">Los días laborales en el condominio son:</span>
+                                    <li v-for="dia in dias_laborales" v-text="dia"></li>
+                                </ul>
+                            </div>
+                            <!-- Columna para las tareas pendientes -->
+                            <div class="col s6" v-show="agregado">
+                                <ul>
+                                    <span style="font-weight: bold">Las tareas pendientes son:</span>
+                                    <li v-for="(tarea,index) in tareas_pendientes">
+                                        {{index}}- {{tarea.tarea}}-
+                                        <small>({{tarea.prioridad}})</small>
+                                    </li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <span style="font-weight: bold">Datos de la persona:</span>
+                                    <li v-for="(value, key, index) in persona">
+                                        {{index}}- {{key}}:
+                                        <small>({{value}})</small>
+                                    </li>
+                                </ul>
+
+                                <input type="text" v-model="newDay" v-on:keyup.enter="addDay">
+                                <label>Ingrese un día:</label>
+                            </div> <!-- v-show -->
+
+                            <div class="row">
+                                <div class="col s6">
+                                    <ul>
+                                        <span style="font-weight: bold">Deportes favoritos</span>
+                                        <li v-for="sport in sports">
+                                            {{index}}- {{sport}}
+                                        </li>
+                                    </ul>
+
+                                    <form v-on:submit.prevent="addSport">
+                                        <input type="text" placeholder="Tu deporte favorito" v-model="newSport">
+                                        <input type="text" placeholder="Lo practicas ?" v-model="newAnsw">
+                                        <input type="submit" value="Grabar" >
+                                    </form>
+                                </div>
+                            </div>
+                        </div> <!-- Fila 13 -->
+                    </main>
+                </div>
+            </li>
+        </ul> <!-- collapsible -->
+    </div> <!-- Container -->
+
+    <!-- ******************************************** Scripts ****************************************************************** -->
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- MATERIALIZE -->
+    <script src="../js/materialize.js"></script>
+
+    <!-- PERSONALIZADAS -->
+    <script src="../js/init.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('select').material_select();
+            $('.datepicker').pickadate();
+            $('.sidenav').sidenav();
+            $('.dropdown-button').dropdown();
+            $('.button-collapse').sidenav();
+            $('.slider').slider({
+                indicators: false,
+                interval: 2000
+            });
+            $('.modal').modal();
+        });
+
+        function miAviso(){
+            mensaje = "Este es un mensaje muy importante para tomar encuenta de parte del INSIVUMEH. \nSe prevee que después de semana santa ingrese un frente frío y lluvias permanentes por 3 días. Favor tomar sus precauciones. "
+            Materialize.toast(mensaje,4000,'rounded');
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+
+''
+
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $('select').material_select();
+       $('.datepicker').pickadate();
+    });
+</script>
+
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
+
+<pre>{{ $data }}</pre>
+
+-->

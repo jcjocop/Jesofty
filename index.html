@@ -1,0 +1,274 @@
+<!--
+    index.html
+
+    Principal del sitio web de JeSoftY.com
+
+    Utiliza Materialize y el font Desyrel
+
+    Marzo 20, 2018
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <title>Jesofty 2018</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- Desyrel -->
+  <link rel="stylesheet" href="fonts/Desyrelf/stylesheet.css" type="text/css" charset="utf-8" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<!-- =================================================== Cuerpo principal ===================================================-->
+<body>
+
+    <!-- ******************************************** Barra de navegación ****************************************************************** -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right"><img src="imagenes/logo.jpg" alt=""></a>
+
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li>
+                        <a href="portafolio/portafolio.html" target="_blank" class="center tooltipped" data-tooltip="Portafolio"><i class="material-icons">business_center</i></a>
+                    </li>
+                    <li>
+                        <a href="#!" class="dropdown-button center tooltipped" data-tooltip="Demostraciones" data-activates="dropdowna"><i class="material-icons">arrow_drop_down</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="dropdown-content" id="dropdowna">
+        <li><a href="demos/demosi.html" target="_blank" class="center tooltipped" data-tooltip="Condominios"><i class="material-icons">business</i></a></li>
+        <li><a href="#" class="center tooltipped" data-tooltip="RRHH"><i class="material-icons">people</i></a></li>
+    </ul>
+    <!-- Move the sidenav outside of .navbar-fixed -->
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="portafolio/portafolio.html" target="_blank" class="center tooltipped" data-tooltip="Portafolio"><i class="material-icons">business_center</i></a></li>
+        <li>
+            <a href="#!" class="dropdown-button center tooltipped" data-tooltip="Demostraciones" data-activates="dropdown1"><i class="material-icons">arrow_drop_down</i></a>
+        </li>
+    </ul>
+    <ul class="dropdown-content" id="dropdown1">
+        <li><a href="#" class="center tooltipped" data-tooltip="Condominios"><i class="material-icons">business</i></a></li>
+        <li><a href="#" class="center tooltipped" data-tooltip="RRHH"><i class="material-icons">people</i></a></li>
+    </ul>
+    <!-- ************************************************************************************************************** -->
+
+    <!-- Imagen superior -->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                  <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Visite nuestro Portafolio <i class="material-icons">business_center</i> y nuestras Demos <i class="material-icons">arrow_drop_down</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="imagenes/background1.jpg" class="responsive-img"></div>
+    </div> <!-- INDEX-BANNER -->
+
+  <!-- Contenedor para la sección donde están los principales servicios de Jesofty: Sistemas y Sitios Web & Open Class -->
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+
+        <!-- Columna de Sistemas Web -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <h2 class="center brown-text"><i class="material-icons">public</i></h2>
+            <h4 class="row center" style="font-family:desyrelregular">Sistemas Web</h4>
+
+            <p class="light">Tienen cierto parecido con los portales o sitios web, y son conocidos como Aplicaciones Web. No dependen del Sistema Operativo (Windows, Linux, etc.) ni del dispositivo (PC, laptop, tablet, movil, etc.) debido a que residen en la nube por lo tanto se mantienen en línea permanentemente. Jesofty utiliza la base de datos No-Relacional de Firebase de Google para eficientar los accesos y muestra de información en el navegador.</p>
+          </div>
+        </div>
+
+        <!-- Columna de Sitios Web -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center" style="font-family:desyrelregular; font-size: 35px"><a>Sitios Web</a></h5>
+
+            <p class="light">Son adaptables a cualquier dispositivo y pueden manejar información estática (logotipo, texto de la misión y visión de una empresa, etc.) y dinámica (encuestas, productos, precios, etc.). Dependiendo de la naturaleza del negocio o servicio profesional, así será la información a publicar y administrar. Por tanto incide positivamente en los resultados a obtener en las ventas, marketing, servicios, catálogos de productos, promocionales, etc.</p>
+          </div>
+        </div>
+
+        <!-- Columna de Open Class -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">school</i></h2>
+
+            <h5 class="center" style="font-family:desyrelregular; font-size: 35px"><a href="http://www.jesofty.com/juankclass" target="_blank">Open Class</a></h5>
+            <p class="light">Contamos con una área educativa para inscribir profesores y estudiantes por curso. Permite monitorear la programación de contenido de un curso, el cumplimiento de éste por parte del profesor y del estudiante con la resolución de tareas, exámenes y demás trabajos que quedan registrados en sistema.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- CONTAINER -->
+
+  <!-- Desarrollo Images Section -->
+  <div class="row">
+
+    <!-- Columna de Navegadores -->
+    <div class="col s12 m6">
+
+      <div class="center" style="font-family:desyrelregular">
+        <h4>Desarrollamos software para ser utilizado en cualquier navegador</h4>
+      </div>
+      <p class="center-align light"><img src="imagenes/wsnavegadores.jpg"></p>
+    </div>
+
+    <!-- Columna de Herramientas de Desarrollo -->
+    <div class="col s12 m6">
+
+      <div class="center" style="font-family:desyrelregular">
+        <h4>Utilizamos las herramientas de desarrollo de última generación</h4>
+      </div>
+    </div>
+    <p class="center-align light"><img src="imagenes/herramientas.jpg"></p>
+  </div> <!-- CLASS ROW -->
+
+  <!-- Sección Contáctenos -->
+  <div class="row center">
+
+    <div class="col s4">
+
+      <div class="row" >
+        <h4 style="font-family:desyrelregular">CONTACTENOS</h4>
+        <p class="center-align light"><img src="imagenes/contactenos.jpg" class="responsive-img circle"></p>
+
+        <form action="#">
+          <input type="radio" name="agrado" id="si" value="1">SI
+          <label for="si"></label>
+          <input type="radio" name="agrado" id="no" value="2">NO
+          <label for="no"></label><br>
+          <label>¿ Es de su agrado esta página ?</label><br>
+
+          <input type="checkbox" name="cali" id="checksi" value="1">
+          <label for="checksi">¿ Encontró lo que buscaba ?</label>
+          <input type="checkbox" name="cali" id="checkno" value="2">
+          <label for="checkno">¿ La recomendaría ?</label>
+        </form>
+      </div>
+    </div>
+
+    <div class="col s4">
+      <div class="card">
+
+        <span class="card-title">Déjenos su comentario</span>
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+        <form action="#">
+          <div class="input-field">
+            <textarea style="height:80px; width:400px;"></textarea>
+            <label>... * Escriba aqui</label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Tercera Columna: Tarjeta con Desplazamiento (NO FUNCIONA) -->
+    <div class="col s4">
+      <div class="col s9">
+
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="imagenes/host2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Dominio y Hosting<i class="material-icons right">arrow_drop_down</i></span>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Dominio y Hosting<i class="material-icons right">close</i></span>
+          <p>También le asesoramos en la obtención de un dominio (wwww.miempresa.com) y el plan de alojamiento de su sitio web que más le convenga.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div> <!-- ROW CENTER (CONTACTENOS) -->
+
+  <!-- Sección Wrapper con la imágen de contáctenos -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+
+          <!--
+          <h5 class="header col s12 light"></h5>
+          -->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="imagenes/background3.jpg" class="responsive-img"></div>
+  </div> <!-- parallax-container -->
+
+  <!-- Sección Pié de Página -->
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+
+        <div class="col l6 s12">
+          <h5 class="white-text">Jesofty</h5>
+          <p class="grey-text text-lighten-4">Es una empresa con más de 20 años de Desarrollo de Software para la empresa privada, organismos internacionales y gobierno.</p>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Cartera Sitios Web</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Ascated</a></li>
+            <li><a class="white-text" href="#!">IAVHS</a></li>
+            <li><a class="white-text" href="#!">Montanas Rest</a></li>
+            <li><a class="white-text" href="#!">Top Consultores</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Cartera Sistemas Web</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Top Consultores</a></li>
+            <li><a class="white-text" href="#!">Fundespe</a></li>
+            <li><a class="white-text" href="#!">Villas de San Isidro</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://jesofty.com">JC Jocop</a>
+      </div>
+    </div>
+  </footer> <!-- footer -->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+</html>
+
+<!--
+  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <nav class="white" role="navigation">
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Enlaces</a></li>
+      </ul>
+
+            <h4 class="row center" style="font-family:desyrelregular">Sitios Web</h4>
+
+-->
+ 
